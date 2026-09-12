@@ -1,0 +1,12 @@
+[project]
+name = "sentinel-os-runtime"
+version = "0.1.0"
+description = "Userspace AI supervisor stub for Sentient OS Lab"
+requires-python = ">=3.10"
+readme = "../README.md"
+
+[project.scripts]
+sentinel = "sentinel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sentinel*"]
